@@ -61,7 +61,7 @@ public class CircleProgressView extends View {
     //region members
     //Colors (with defaults)
     private final int mBarColorStandard = 0xff009688; //stylish blue
-    private final boolean textIsEnabled  = true;
+    private  boolean textIsEnabled  = true;
 
     protected int mLayoutHeight = 0;
     protected int mLayoutWidth = 0;
@@ -999,7 +999,7 @@ public class CircleProgressView extends View {
         setSpinSpeed((int) a.getFloat(R.styleable.CircleProgressView_cpv_spinSpeed,
                 mSpinSpeed));
 
-        a.getBoolean(R.styleable.CircleProgressView_cpv_text_enabled, textIsEnabled);
+        textIsEnabled =  a.getBoolean(R.styleable.CircleProgressView_cpv_text_enabled,true);
 
         setSpin(a.getBoolean(R.styleable.CircleProgressView_cpv_spin,mSpin));
 
