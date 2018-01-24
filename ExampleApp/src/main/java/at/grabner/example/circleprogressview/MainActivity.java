@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mCircleView.setValue(50);
         //value setting
 //        mCircleView.setMaxValue(100);
 //        mCircleView.setValue(0);
